@@ -1,0 +1,101 @@
+{
+    "coords":
+    [
+        {
+            "type": "circle",
+            "x": "600",
+            "y": "200",
+            "radius": "100"
+        },
+        {
+            "type": "rectangle",
+            "left": "100",
+            "top": "100",
+            "right": "200",
+            "bottom": "200"
+        },
+        {
+            "type": "rectangle",
+            "left": "100",
+            "top": "300",
+            "right": "200",
+            "bottom": "400"
+        },
+        {
+            "type": "rectangle",
+            "left": "100",
+            "top": "500",
+            "right": "200",
+            "bottom": "600"
+        },
+        {
+            "type": "rectangle",
+            "left": "300",
+            "top": "100",
+            "right": "400",
+            "bottom": "200"
+        },
+        {
+            "type": "rectangle",
+            "left": "300",
+            "top": "300",
+            "right": "400",
+            "bottom": "400"
+        },
+        {
+            "type": "rectangle",
+            "left": "300",
+            "top": "500",
+            "right": "400",
+            "bottom": "600"
+        },
+        {
+            "type": "circle",
+            "x": "600",
+            "y": "500",
+            "radius": "100"
+        },
+        {
+            "type": "rectangle",
+            "left": "800",
+            "top": "100",
+            "right": "900",
+            "bottom": "200"
+        },
+        {
+            "type": "rectangle",
+            "left": "800",
+            "top": "300",
+            "right": "900",
+            "bottom": "400"
+        },
+        {
+            "type": "rectangle",
+            "left": "800",
+            "top": "500",
+            "right": "900",
+            "bottom": "600"
+        },
+        {
+            "type": "rectangle",
+            "left": "1000",
+            "top": "100",
+            "right": "1100",
+            "bottom": "200"
+        },
+        {
+            "type": "rectangle",
+            "left": "1000",
+            "top": "300",
+            "right": "1100",
+            "bottom": "400"
+        },
+        {
+            "type": "rectangle",
+            "left": "1000",
+            "top": "500",
+            "right": "1100",
+            "bottom": "600"
+        }
+    ]
+}

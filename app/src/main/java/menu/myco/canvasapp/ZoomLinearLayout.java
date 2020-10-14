@@ -1,5 +1,6 @@
 package menu.myco.canvasapp;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
@@ -19,7 +20,7 @@ public class ZoomLinearLayout extends RelativeLayout implements ScaleGestureDete
     private static final float MAX_ZOOM = 4.0f;
 
     private Mode mode = Mode.NONE;
-    private float scale = 1.0f;
+    private float scale = 0.5f;
     private float lastScaleFactor = 0f;
 
     private float startX = 0f;
@@ -45,6 +46,7 @@ public class ZoomLinearLayout extends RelativeLayout implements ScaleGestureDete
         init(context);
     }
 
+    @SuppressLint("ClickableViewAccessibility")
     public void init(Context context) {
         final ScaleGestureDetector scaleDetector = new ScaleGestureDetector(context, this);
         this.setOnTouchListener(new OnTouchListener() {
@@ -78,10 +80,11 @@ public class ZoomLinearLayout extends RelativeLayout implements ScaleGestureDete
                 }
                 scaleDetector.onTouchEvent(motionEvent);
 
+
                 if ((mode == Mode.DRAG && scale >= MIN_ZOOM) || mode == Mode.ZOOM) {
                     getParent().requestDisallowInterceptTouchEvent(true);
-                    float maxDx = (child().getWidth() - (child().getWidth() / scale)) / 2 * scale;
-                    float maxDy = (child().getHeight() - (child().getHeight() / scale)) / 2 * scale;
+                    float maxDx = (child().getWidth() - (child().getWidth() / scale)) / 2 * scale ;
+                    float maxDy = (child().getHeight() - (child().getHeight() / scale)) / 2 * scale ;
                     dx = Math.min(Math.max(dx, -maxDx), maxDx);
                     dy = Math.min(Math.max(dy, -maxDy), maxDy);
                     applyScaleAndTranslation();
